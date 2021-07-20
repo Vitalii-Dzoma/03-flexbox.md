@@ -1,6 +1,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+  box-sizing: border-box;
 }
 
 /* цвет основного текста #212121 */
@@ -22,6 +23,13 @@ body {
   --medium-font-weight: 500;
   --title-line-height: 1.17;
   --text-line-height: 1.71;
+}
+
+/* Утилиты */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .title {
@@ -47,10 +55,50 @@ body {
   line-height: 1.19;
 }
 
+/* container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background: #2196f3;
+}
+
+.navigation {
+  margin-left: 93px;
+}
+/* main nav */
+.main-nav {
+  display: flex;
+}
+
 .web-logo {
   color: var(--accent-color);
 }
 
+.list.nav {
+  display: flex;
+}
+
+.list.address {
+  display: flex;
+  margin-left: auto;
+}
+
+.list.address .item + .item {
+  margin-left: 50px;
+}
+
+.list.nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* hero */
+.hero {
+  text-align: center;
+}
 /* h1 */
 .title {
   font-size: 44px;
@@ -59,6 +107,11 @@ body {
 .titles {
   font-size: 36px;
 }
+
+.list.flex {
+  display: flex;
+}
+
 .description {
   font-size: 14px;
 }
@@ -77,12 +130,20 @@ body {
   font-size: 16px;
   font-family: inherit;
 }
+
 .button:hover,
 .button:focus {
   color: var(--accent-color);
 }
 
 .button.primary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+
   color: var(--primary-backround-color);
   background-color: var(--accent-color);
   font-weight: var(--bold-font-weight);
@@ -106,9 +167,12 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
+.list.nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .portfolio-btn {
   color: var(--primary-text-color);
   font-family: Roboto;
