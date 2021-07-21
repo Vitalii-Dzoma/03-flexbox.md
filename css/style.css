@@ -26,6 +26,8 @@ body {
 }
 
 /* Утилиты */
+
+h3,
 .list {
   margin: 0;
   padding: 0;
@@ -39,6 +41,16 @@ body {
 
 .titles .description {
   line-height: var(--title-line-height);
+}
+
+.list.titles {
+  display: flex;
+  justify-content: space-between;
+}
+.list.titles .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* header */
@@ -57,13 +69,38 @@ body {
 
 /* container */
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   background: #2196f3;
+}
+/* контейнер с изображениями */
+.container.image {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
+
+/* контейнер с аватарами */
+
+.container.team {
+  padding-bottom: 94px;
+}
+
+.container.team .list {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .container.footer {
+  display: flex;
+} */
+
+.titles.surnames {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .navigation {
@@ -72,6 +109,7 @@ body {
 /* main nav */
 .main-nav {
   display: flex;
+  border-bottom: 1px solid transparent;
 }
 
 .web-logo {
@@ -106,14 +144,38 @@ body {
 }
 .titles {
   font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+.list.titles {
 }
 
 .list.flex {
   display: flex;
+  margin-top: 94px;
+}
+.list.flex .item {
+  width: 270px;
+}
+/* .list.titles .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.list.flex .item:not(:nth-child(4)) {
+  margin-right: 30px;
 }
 
 .description {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.description-text {
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+
+  line-height: var(--text-line-height);
+  /* font-weight: 400; */
 }
 .titles > .item,
 .img-title {
@@ -212,6 +274,9 @@ p {
   text-decoration: none;
 }
 
+.link.footer {
+  color: var(--primary-backround-color);
+}
 .item-text {
   font-size: 16px;
   line-height: 1.88;
@@ -223,11 +288,28 @@ p {
   font-size: 18px;
   line-height: 2;
 }
+
+.item-footer .link {
+  color: #ffffff60;
+}
+
 .img-title + p {
   line-height: inherit;
   font-weight: var(--medium-font-weight);
 }
 .location {
   font-size: 14px;
-  /* color: var(----primary-backround-color) поставим после изменения фона */
+  color: var(--primary-backround-color);
+}
+.page-footer {
+  /* display: flex; */
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-footer {
+  background-color: #2f303a;
 }
