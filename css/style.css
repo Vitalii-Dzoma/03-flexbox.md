@@ -38,11 +38,6 @@ p,
   list-style: none;
 }
 
-.title {
-  line-height: 1.36;
-  font-weight: var(--large-font-weight);
-}
-
 .titles .description {
   line-height: var(--title-line-height);
 }
@@ -138,12 +133,19 @@ p,
 /* hero */
 .hero {
   text-align: center;
-  color: var(-);
+  background-color: var(--footer-color);
+  padding: 200px;
 }
 /* h1 */
 .title {
   font-size: 44px;
   text-align: center;
+  color: var(--primary-backround-color);
+  text-transform: uppercase;
+  padding-bottom: 30px;
+
+  line-height: 1.36;
+  font-weight: var(--large-font-weight);
 }
 .titles {
   font-size: 36px;
