@@ -55,6 +55,10 @@ p,
   font-weight: var(--medium-font-weight);
 }
 /* logo */
+.container.main-nav a {
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
 .container.main-nav > .link,
 .page-footer > .link {
   font-family: Raleway, sans-serif;
@@ -80,23 +84,14 @@ p,
 
 /* контейнер с аватарами */
 
-/* .container.team {
-  padding-bottom: 94px;
-} */
-
-/* container portfolio */
-
-.container.team .list {
-  display: flex;
-  justify-content: space-around;
+*/ .container.team .list:not(:last-child) {
+  margin-right: 30px;
 }
-
 /* .container.footer {
   display: flex;
 } */
 
 .titles.surnames {
-  /* padding-top: 94px; */
   padding-bottom: 50px;
 }
 
@@ -156,7 +151,7 @@ p,
 /* image names */
 .names {
   text-align: center;
-  padding: 30px 59px 30px 60px;
+  padding: 30px 32px;
 }
 .title-text {
   padding-top: 10px;
@@ -391,9 +386,12 @@ p {
   padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
-}
-.wrapper-footer {
   background-color: #2f303a;
 }
 
 /* h1 portfolio */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
